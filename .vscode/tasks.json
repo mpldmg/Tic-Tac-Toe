@@ -1,0 +1,53 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build Client",
+            "type": "shell",
+            "command": "mvn",
+            "args": [
+                "compile"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/Client-Tic-Tac-Toe"
+            },
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            },
+            "problemMatcher": ["$maven-compile"]
+        },
+        {
+            "label": "Build Server",
+            "type": "shell",
+            "command": "mvn",
+            "args": [
+                "compile",
+                "dependency:copy-dependencies"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/Server-Tic-Tac-Toe"
+            },
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            },
+            "problemMatcher": ["$maven-compile"]
+        },
+        {
+            "label": "Build All",
+            "dependsOrder": "sequence",
+            "dependsOn": [
+                "Build Client",
+                "Build Server"
+            ],
+            "group": "build"
+        }
+    ]
+} 

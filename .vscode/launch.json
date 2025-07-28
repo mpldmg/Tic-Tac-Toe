@@ -1,0 +1,32 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Client",
+            "request": "launch",
+            "mainClass": "TicTacToe.Client.Main",
+            "projectName": "Client-Tic-Tac-Toe",
+            "classpath": [
+                "${workspaceFolder}/Client-Tic-Tac-Toe/target/classes"
+            ],
+            "sourcePaths": [
+                "${workspaceFolder}/Client-Tic-Tac-Toe/src/main/java"
+            ]
+        },
+        {
+            "type": "java",
+            "name": "Launch Server",
+            "request": "launch",
+            "mainClass": "TicTacToe.NettyServer.NettyServer",
+            "projectName": "Server-Tic-Tac-Toe",
+            "classpath": [
+                "${workspaceFolder}/Server-Tic-Tac-Toe/target/classes",
+                "${workspaceFolder}/Server-Tic-Tac-Toe/target/dependency/*"
+            ],
+            "sourcePaths": [
+                "${workspaceFolder}/Server-Tic-Tac-Toe/src/main/java"
+            ]
+        }
+    ]
+} 
