@@ -9,6 +9,8 @@
         <module name="Server-Tic-Tac-Toe" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="18" />
+    <bytecodeTargetLevel target="18">
+      <module name="Client-Tic-Tac-Toe" target="23" />
+    </bytecodeTargetLevel>
   </component>
 </project>
