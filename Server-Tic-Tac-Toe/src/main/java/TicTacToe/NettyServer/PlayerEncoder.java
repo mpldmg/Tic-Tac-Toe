@@ -4,10 +4,10 @@ import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.handler.codec.MessageToByteEncoder;
 
-public class PlayerEncoder extends MessageToByteEncoder<Integer> {
+public class PlayerEncoder extends MessageToByteEncoder<GameMessage> {
     @Override
-    public void encode(ChannelHandlerContext ctx, Integer   msg, ByteBuf out)
-            throws Exception   {
-        out. writeInt(msg);
+    protected void encode(ChannelHandlerContext ctx, GameMessage msg, ByteBuf out) {
+        out.writeInt(msg.getType().getCode());
+        out.writeInt(msg.getData());
     }
 }

@@ -1,0 +1,21 @@
+<component name="libraryTable">
+  <library name="Netty-4.2.2">
+    <ANNOTATIONS>
+      <root url="file://$MAVEN_REPOSITORY$" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="file://$MAVEN_REPOSITORY$" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="file://$MAVEN_REPOSITORY$" />
+    </JAVADOC>
+    <NATIVE>
+      <root url="file://$MAVEN_REPOSITORY$" />
+    </NATIVE>
+    <SOURCES>
+      <root url="file://$MAVEN_REPOSITORY$" />
+      <root url="file://$MAVEN_REPOSITORY$" />
+    </SOURCES>
+    <jarDirectory url="file://$MAVEN_REPOSITORY$" recursive="false" type="SOURCES" />
+  </library>
+</component>
